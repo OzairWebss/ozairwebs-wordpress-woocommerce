@@ -2,11 +2,25 @@
 
 # WordPress and WooCommerce Engineering Resources by OzairWebs
 
+![Conceptual 3D publishing and commerce cover with editorial panels, plugin modules, catalogue cards and a secure order ledger](assets/wordpress-commerce-3d-cover.png)
+
+*Conceptual service illustration. The technical maps below explain review decisions; they do not show client data or measured results.*
+
+> **Engineering principle:** catalogue truth, payment evidence and recovery ownership belong in the scope before visual polish reaches checkout.
+
 An editor-friendly website should remain understandable when its business grows. Problems usually appear at the boundaries: a plugin stores data in the wrong place, an import replaces approved content, a cache exposes personalised output, or a checkout extension fails after an update. This repository explains how to retain WordPress's publishing strengths while making custom functionality and commerce operations reviewable.
 
 [OzairWebs WordPress and WooCommerce services](https://ozairwebs.com/services/wordpress-woocommerce/) describes the commercial scope. The resources here help owners, store managers and developers choose between configuration, a supported extension and custom engineering. They include a plugin-scoping checklist, WooCommerce compatibility checks, AI capability distinctions and practical maintenance guidance. No client plugin, paid extension source or private website backup is included.
 
 Reviewed on **13 October 2026**. The official release sources identify **WordPress 7.1.3** and **WooCommerce 11.2.1** as current stable releases at review time. Features and compatibility must be checked against the installed site, PHP environment, theme and extensions. The [reference register](docs/references.md) separates stable core functionality, optional packages and emerging work; roadmap items are not described as delivered production features.
+
+## Inspect the whole store journey
+
+![Commerce review map: catalogue, checkout, order transitions, fulfilment, reconciliation and recovery](assets/commerce-control-map.svg)
+
+Read the top row before the operational follow-through in the lower row. Payment acceptance depends on the gateway and order type; cash-on-delivery needs a later collection state. [WooCommerce engineering](docs/woocommerce-engineering.md) expands the map into a practical compatibility checklist.
+
+> **Release question:** can the team explain what happens when a payment callback repeats, a refund arrives, or a fulfilment request fails? A successful demo purchase is only one part of that answer.
 
 ## Find the guide for your operational problem
 
@@ -21,6 +35,19 @@ Reviewed on **13 October 2026**. The official release sources identify **WordPre
 | Maintain public search signals | [WordPress SEO](docs/wordpress-seo.md) |
 | Plan updates, migration and recovery | [Maintenance and migration](docs/maintenance-and-migration.md) |
 | Compare approaches before commissioning | [WordPress FAQ](docs/wordpress-faq.md) |
+
+## Visual review: choose the right intervention
+
+![Six-step decision map comparing configuration, supported extensions, scoped custom code, tests and handover](assets/plugin-decision-map.svg)
+
+| Approach | A useful starting point | Evidence before committing |
+| --- | --- | --- |
+| Core configuration | Existing settings can express the rule | Document the setting, permissions and rollback |
+| Supported extension | A maintained package covers the actual journey | Test installed versions, data access and checkout compatibility |
+| Custom plugin | Durable business behaviour needs explicit engineering | Define inputs, permissions, supported storage and failure cases |
+| Theme or block work | Editors need a reusable presentation pattern | Test accessible output and the real editing workflow |
+
+The decision map compares options rather than prescribing a package. [Custom plugin guidance](docs/custom-plugin-development.md) explains the boundary and maintenance questions in more depth.
 
 ## Start with content ownership and business rules
 
@@ -129,3 +156,6 @@ Discuss requirements through the [WordPress and WooCommerce service page](https:
 ## Reusable resources and maintenance
 
 Read the [published project context](docs/case-study-references.md), [source register](docs/references.md) and [reusable decision register](examples/README.md). Contributions should identify a specific correction and supporting evidence; see [contribution guidance](CONTRIBUTING.md). The [maintenance plan](MAINTENANCE.md) explains how versions and source changes are reviewed. Original documentation and CSV templates use [CC BY 4.0](LICENSE); the OzairWebs logo is excluded from that licence.
+
+
+[Visual sources, accessible alternatives and cover prompt](assets/README.md).
