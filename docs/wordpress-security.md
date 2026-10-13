@@ -1,5 +1,11 @@
 # WordPress security review
 
+![Security review covering identity, permissions, input integrity, interfaces, dependencies and recovery](../assets/security-boundaries.svg)
+
+> **Review note:** A valid nonce does not replace a capability or record-access check.
+
+*Original conceptual map. The written guidance below supplies the details and accessible explanation.*
+
 Define the threat and the protected data before adding controls. A public catalogue, an editorial dashboard and an order export expose different risks. Record administrative access, integration credentials, writable files and customer-data retention. No configuration can guarantee complete protection from compromise.
 
 ## Application checks

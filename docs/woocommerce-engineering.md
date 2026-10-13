@@ -1,5 +1,11 @@
 # WooCommerce compatibility and order engineering
 
+![Commerce controls from catalogue validation to payment evidence, fulfilment and recovery](../assets/commerce-control-map.svg)
+
+> **Review note:** Treat each order state as an explicit business transition. Verify the implemented path before automating the next action.
+
+*Original conceptual map. The written guidance below supplies the details and accessible explanation.*
+
 A store's correctness is measured through order journeys. Begin with catalogue ownership, inventory, payment confirmation and fulfilment rules. Configure tax and compliance requirements with the responsible merchant/adviser. A demo checkout cannot establish eligibility for a payment provider or the correctness of regional requirements.
 
 ## Original compatibility checklist

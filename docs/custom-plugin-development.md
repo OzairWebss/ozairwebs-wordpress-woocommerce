@@ -1,5 +1,11 @@
 # Private plugin scoping and maintenance
 
+![Decision map for configuration, extensions, custom code, testing and handover](../assets/plugin-decision-map.svg)
+
+> **Review note:** Choose a maintainable solution with a named owner, rather than a feature list without operational boundaries.
+
+*Original conceptual map. The written guidance below supplies the details and accessible explanation.*
+
 A custom plugin is appropriate when the required business behaviour is distinctive or supported extensions cannot meet the data and recovery requirements. Compare configuration, an extension and custom work against operating cost. An unsupported override can be more fragile than a well-scoped plugin, while unnecessary bespoke code creates maintenance debt.
 
 ## Original plugin-scoping checklist
